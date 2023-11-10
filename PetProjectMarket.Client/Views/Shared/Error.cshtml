@@ -1,0 +1,22 @@
+﻿@model ErrorViewModel
+@{
+	ViewData["Title"] = "Error";
+	<link rel="stylesheet" href="~/css/Error.css" />
+}
+<section>
+	<div class="container">
+		<div class="text">
+			<h1>@Model.StatusCode</h1>
+			<h2>@Model.TextError</h2>
+			<div class="input-box">
+				<input type="text" placeholder="Search...">
+				<button><i class="fa-solid fa-search"></i></button>
+			</div>
+			<ul class="menu">
+				<li><a href="#/HomePage/Home">Go to Homepage</a></li>
+				<li><a href="#">Contact support</a></li>
+			</ul>
+		</div>
+		<div><img class="image" src="https://omjsblog.files.wordpress.com/2023/07/errorimg.png" alt=""></div>
+	</div>
+</section>
